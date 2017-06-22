@@ -1,0 +1,9 @@
+Look for genesis-test.json inside this folder
+
+USed to boot initminer node:
+./mused --p2p-endpoint=0.0.0.0:2001 --rpc-endpoint=0.0.0.0:8090 --genesis-json genesis-test.json
+
+Then, 
+
+Used to boot other node, IP after -s may have to be changed
+./mused -s 192.34.60.157:2001 --replay-blockchain --p2p-endpoint=0.0.0.0:2001 --rpc-endpoint=0.0.0.0:8090 --genesis-json genesis-test.json
